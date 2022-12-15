@@ -1,4 +1,4 @@
-# GLaDOS-_-AI
+# GLaDOS-_-AI @ I.L 
  Discord Chat ai Bot
 ------------------
 MAINBOT-github.py = AI 비서
