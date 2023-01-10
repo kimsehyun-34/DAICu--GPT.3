@@ -196,6 +196,9 @@ class MyClient(discord.Client):
         else:
             print('Error Code:' + str(rescode))
 #변역 보정
+        #P=str(위의 최종)
+        #최종=P.replace('해요고 믿는다', '한다고 믿어요')
+        
         z=str(result2)
         q=z.replace('나는', '저는')
 
@@ -212,10 +215,28 @@ class MyClient(discord.Client):
         t=b.replace('입니다', '이에요')
 
         n=str(t)
-        y=n.replace('이다', '입니다')
+        y=n.replace('이다', '이에요')
 
-        m=str(n)
-        u=m.replace('당신', 'Mr.Kin 님')
+        m=str(y)
+        u=m.replace('당신', '주인님')
+
+        a=str(u)
+        s=a.replace('아니', '아니요')
+
+        f=str(s)
+        d=f.replace('해요고 믿는다', '한다고 믿어요')
+
+        g=str(d)
+        h=g.replace('왔다', '왔어요')
+
+        j=str(h)
+        l=j.replace('아니요라', '아니라')
+
+        k=str(l)
+        i=k.replace('된다', '되요')
+
+        o=str(i)
+        p=o.replace('믿는다', '믿어요')
 #전송
         await message.channel.send(u)
 
