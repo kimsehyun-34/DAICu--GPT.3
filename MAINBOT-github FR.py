@@ -129,34 +129,7 @@ class MyClient(discord.Client):
             await channel.send(msg)
             return None
 
-        if message.content == ("너 프사좀 올려줘.") or message.content == ("너 프사좀 올려봐.") or message.content == ("너 사진좀 올려봐.") or message.content == ("너 사진좀 올려줘."):
-            channel = message.channel
-            randomNum = random.randrange(1, 3)
-            if (message.author == "FURY#4682"):
-                randomNum = 1
-                msg=("ㅇㅋ")
-                await channel.send(msg)
-            if randomNum==1:
-                msg=("ㅇㅋ")
-                await channel.send(msg)
-                embed = discord.Embed(title="", description="", color= 0xF5BCA9)
-                embed.set_image(url="https://blog.kakaocdn.net/dn/pDtNp/btrTKHlYlok/rqaFxowCyT4V7IBDdNiXk0/img.png")
-                await message.channel.send(embed=embed)
-                time.sleep(2)
-                embed = discord.Embed(title="", description="", color= 0xF5BCA9)
-                embed.set_image(url="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FDr56f%2FbtrTKbnypy5%2FVR4DKhrBfiQDhH4m6JvrXK%2Fimg.png")
-                await message.channel.send(embed=embed)
-                time.sleep(1)
-                msg =("ㅋㅋㅋ")
-                await channel.send(msg)
-                return None
-            else:
-                msg=("갑자기??")
-                await channel.send(msg)
-                time.sleep(1)
-                msg=("나중에 보여줄게..")
-                await channel.send(msg)
-                return None
+
 #메세지 추출
         gi=message.content
         #print(message.content)
